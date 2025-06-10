@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+hr {
+    border: 1px solid #000;
+    margin: 20px;
+}
+
+.header {
+    width: 100vw;
+    height: 80px;
+    left: 0;
+    top: 0;
+    background-color: #FFE600;
+    border-bottom: 1px solid #000;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#busqueda {
+    display: flex;
+}
+
+#logo {
+    font-size: 50px;
+}
+
+.menu .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+h2 {
+    align-items: center;
+    height: 60px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header a {
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    transition: background-color 0.5ms ease;
+}
+
+nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: -500px;
+}
+
+
+nav button {
+    width: 50%;
+}
+
+
+nav a:hover {
+    color: rgb(92, 92, 196);
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Container para el dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Contenido oculto del dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 500%;
+}
+
+/* Color al pasar el mouse sobre el dropdown */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Muestra el contenido dropdown cuando se pasa el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.carrousel h2 {
+    align-items: center;
+    height: 60px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contenedor del carrusel: oculta el contenido que sobrepasa */
+.containercarrousel {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Carrusel con animación de desplazamiento horizontal */
+.containercarrousel ul {
+    display: flex;
+    animation: slide 30s infinite alternate ease-in-out;
+    padding: 0;
+    width: 400%;
+}
+
+/* Cada imagen del carrusel ocupa todo el ancho */
+.containercarrousel ul li {
+    width: 100%;
+    position: relative;
+}
+
+.containercarrousel ul li img {
+    width: 100%;
+}
+
+.content img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.container h3 {
+    font-size: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.content {
+    color: #000;
+    font-size: 20px;
+}
+
+.content p {
+    text-align: left;
+    margin: 15px;
+    color: #5c5757;
+}
+
+
+.box-container-1,
+.box-container-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.box-1 h3,
+.box-2 h3 .box-3 h3 .box-4 h3 {
+    text-align: center;
+}
+
+.box-1 img,
+.box-2 img {
+    border-radius: 10px;
+}
+
+.box-1,
+.box-2{
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(199, 169, 52, 0.2);
+    transition: transform 0.5s;
+    display: none;
+}
+
+/* Efecto zoom al hacer hover sobre las tarjetas */
+.box-1:hover,
+.box-2:hover{
+    transform: scale(1.05);
+}
+
+/* Mostrar solo las primeras 5 tarjetas de películas */
+
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3),
+.box-1:nth-child(4),
+.box-1:nth-child(5),
+.box-2:nth-child(1),
+.box-2:nth-child(2),
+.box-2:nth-child(3),
+.box-2:nth-child(4),
+.box-2:nth-child(5) {
+    display: inline-block;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    margin-top: 100px;
+    border-top: 1px solid #000;
+    text-align: left;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer h3 {
+    font-size: 30px;
+}
+
+.footer a {
+    color: #000;
+    font-size: 15px;
+    margin-right: 20px;
+    display: block;
+}
+
+.footer a:hover {
+    color: rgb(92, 92, 196);
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+.footer textarea {
+    border: 1px solid #000;
+}
+
+/* Formulario de contacto */
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text],
+input[type=email],
+button[type=submit] {
+    font-family: "Bebas Neue", sans-serif;
+    border: 1px solid #000;
+}
+
+.contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.contact button {
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: 1px solid #000;
+}
+
+.contact button:hover {
+    background-color: rgb(92, 92, 196);
+}
+
+
+
+@keyframes slide {
+
+    0%,
+    20% {
+        margin-left: 0;
+    }
+
+    25%,
+    45% {
+        margin-left: -100%;
+    }
+
+    50%,
+    70% {
+        margin-left: -200%;
+    }
+
+    75%,
+    100% {
+        margin-left: -300%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .menu {
+        padding: 10px;
+    }
+    .product {
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #img {
+        width: 75%;
+    }
+
+    .imgfooter {
+        width: 75%;
+    }
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    #menulabel {
+        display: inline;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #030303;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+
+    .product {
+        padding: 30px;
+    }
+
+    .footer {
+        margin-top: 30px;
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+    #img {
+        width: 55%;
+    }
+
+    .imgfooter {
+        width: 55%;
+    }
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    #menulabel {
+        display: inline;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 110%;
+        left: 0;
+        right: 0;
+        background-color: #030303;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 110%;
+    }
+
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+
+    .product {
+        padding: 40px;
+    }
+
+    .footer {
+        margin: 30px;
+        padding: 40px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer ul {
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
+
